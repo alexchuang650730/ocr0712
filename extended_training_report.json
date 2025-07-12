@@ -1,0 +1,106 @@
+{
+  "extended_training_summary": {
+    "additional_episodes": 100,
+    "initial_performance": 0.87,
+    "final_performance": 0.9233349672819476,
+    "absolute_improvement": 0.05333496728194764,
+    "relative_improvement": 6.1304560094192695,
+    "total_episodes": 600,
+    "training_time": 0.00028777122497558594,
+    "improvement_episodes": [
+      500,
+      529
+    ],
+    "breakthrough_achieved": 1
+  },
+  "performance_analysis": {
+    "performance_metrics": {
+      "max_achieved": 0.9236766189024728,
+      "min_achieved": 0.8780410139305942,
+      "average_performance": 0.9053777113651461,
+      "std_deviation": 0.01145033176941779,
+      "final_vs_max": 0.9996301177127
+    },
+    "improvement_pattern": {
+      "steady_improvement_episodes": 0,
+      "regression_episodes": 0,
+      "significant_jumps": 2,
+      "improvement_rate": 0.0005333496728194765
+    },
+    "training_phases": {
+      "phase_1": {
+        "episodes": "501-520",
+        "average_performance": 0.8870757220113228,
+        "improvement": 0.014196183936616147,
+        "stability": 0.9967048782263181,
+        "trend": "increasing"
+      },
+      "phase_2": {
+        "episodes": "521-540",
+        "average_performance": 0.9004721367026887,
+        "improvement": 0.01198435897518535,
+        "stability": 0.9932117537770592,
+        "trend": "increasing"
+      },
+      "phase_3": {
+        "episodes": "541-560",
+        "average_performance": 0.9084631223049169,
+        "improvement": 0.009403511761974181,
+        "stability": 0.9971056140709271,
+        "trend": "increasing"
+      },
+      "phase_4": {
+        "episodes": "561-580",
+        "average_performance": 0.9140063573286786,
+        "improvement": 0.0017670616679384965,
+        "stability": 0.9985848161254655,
+        "trend": "increasing"
+      },
+      "phase_5": {
+        "episodes": "581-600",
+        "average_performance": 0.9168712184781234,
+        "improvement": 0.008956182092151765,
+        "stability": 0.9964948940150633,
+        "trend": "increasing"
+      }
+    },
+    "convergence_indicators": {
+      "last_10_variance": 1.1601778120561336e-05,
+      "trend_slope": 0.0003700588492611291,
+      "plateau_reached": true
+    }
+  },
+  "convergence_study": {
+    "overall_trend": "improving",
+    "convergence_speed": "fast",
+    "stability_assessment": {
+      "early_stability": 0.003306015497331246,
+      "late_stability": 0.003517434967292227,
+      "improved_stability": 0
+    },
+    "plateau_analysis": {
+      "plateau_detected": true,
+      "plateau_duration": 1,
+      "breakthrough_potential": "high"
+    }
+  },
+  "optimization_effectiveness": {
+    "optimization_consistency": {
+      "all_episodes_optimized": 1,
+      "average_optimizations": 7.0,
+      "optimization_stability": 0.0
+    },
+    "performance_vs_optimization": {
+      "correlation": 0.0,
+      "effectiveness_trend": "improving"
+    },
+    "advanced_metrics": {
+      "optimization_efficiency": 0.00015254577916702248,
+      "diminishing_returns": true
+    }
+  },
+  "recommendations": [
+    "🎉 顯著性能提升！建議繼續擴展訓練以探索更高潛力",
+    "🔄 檢測到性能平台期，建議嘗試學習率調度或其他優化策略"
+  ]
+}

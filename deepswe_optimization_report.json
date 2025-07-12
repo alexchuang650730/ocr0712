@@ -1,0 +1,50 @@
+{
+  "deepswe_configuration": {
+    "clip_high_dapo": true,
+    "remove_kl_loss": true,
+    "remove_reward_std": true,
+    "length_normalization": true,
+    "one_sample_removal": true,
+    "compact_filtering": true,
+    "remove_entropy_loss": true
+  },
+  "optimization_statistics": {
+    "clip_high_dapo_applied": 1290,
+    "kl_loss_removed": 0,
+    "reward_std_removed": 500,
+    "length_normalized": 16000,
+    "samples_removed": 14710,
+    "compact_filtered": 500,
+    "entropy_loss_removed": 0,
+    "total_optimizations": 2500
+  },
+  "optimization_frequency": {
+    "clip_high_dapo_rate": 0.516,
+    "kl_removal_rate": 0.0,
+    "reward_std_removal_rate": 0.2,
+    "length_norm_rate": 6.4,
+    "sample_removal_rate": 5.884,
+    "compact_filter_rate": 0.2,
+    "entropy_removal_rate": 0.0
+  },
+  "performance_summary": {
+    "total_steps": 500,
+    "total_episodes": 500,
+    "avg_reward": 0.9571845232552496,
+    "avg_loss": 0.007702901588654076,
+    "optimization_impact": {
+      "avg_improvement": 0.4572749626865909,
+      "avg_efficiency": 0.9363417604956634
+    }
+  },
+  "recommendations": [
+    "梯度裁剪頻繁觸發，考慮調整學習率",
+    "樣本移除比例較高，檢查數據質量"
+  ],
+  "training_summary": {
+    "total_episodes": 500,
+    "final_performance": 0.9551452402820018,
+    "average_improvement": 0.4572749626865909,
+    "total_optimizations_applied": 3500
+  }
+}

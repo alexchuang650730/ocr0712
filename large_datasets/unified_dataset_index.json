@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "creation_time": 1752335931.915797,
+    "creation_date": "2025-07-12 23:58:51",
+    "ocr0712_version": "v1.0 - Large Dataset Integration",
+    "indexer_version": "1.0"
+  },
+  "download_statistics": {
+    "total_datasets": 5,
+    "attempted_downloads": 2,
+    "successful_downloads": 1,
+    "failed_downloads": 1,
+    "total_size_downloaded": 28636017,
+    "estimated_character_count": 0,
+    "estimated_sample_count": 0
+  },
+  "datasets": {
+    "casia_hwdb": {
+      "name": "CASIA-HWDB2.0/2.1/2.2",
+      "description": "中科院自動化所中文手寫數據庫",
+      "status": "not_downloaded",
+      "download_urls": [
+        "http://www.nlpr.ia.ac.cn/databases/download/feature_data/HWDB2.0Train.zip",
+        "http://www.nlpr.ia.ac.cn/databases/download/feature_data/HWDB2.1Train.zip",
+        "http://www.nlpr.ia.ac.cn/databases/download/feature_data/HWDB2.2Train.zip"
+      ],
+      "backup_info": "需要學術機構申請許可"
+    },
+    "hit_mw": {
+      "name": "HIT-MW (Harbin Institute of Technology)",
+      "description": "哈工大中文手寫數據集",
+      "status": "downloaded",
+      "files": [],
+      "total_size": 0,
+      "file_count": 0
+    },
+    "scut_ept": {
+      "name": "SCUT-EPT",
+      "description": "華南理工English and Chinese text dataset",
+      "status": "not_downloaded",
+      "download_urls": [
+        "https://github.com/HCIILAB/SCUT-EPT_Dataset_Release",
+        "https://pan.baidu.com/s/1QkI7kjah8SPHwOQ40rS6Pw"
+      ],
+      "backup_info": "百度網盤: code: scut"
+    },
+    "chn_handwriting": {
+      "name": "Chinese Handwriting Dataset Collection",
+      "description": "多來源中文手寫數據集合",
+      "status": "downloaded",
+      "files": [
+        {
+          "filename": "v2.0.1",
+          "path": "v2.0.1",
+          "size": 28636017,
+          "extension": ".1",
+          "modification_time": 1752335931.4679897
+        }
+      ],
+      "total_size": 28636017,
+      "file_count": 1
+    },
+    "calamari_chinese": {
+      "name": "Calamari Chinese OCR Dataset",
+      "description": "Calamari OCR框架中文數據集",
+      "status": "not_downloaded",
+      "download_urls": [
+        "https://github.com/Calamari-OCR/calamari_models/tree/master/antiqua_historical",
+        "https://zenodo.org/record/4428683/files/chinese_traditional.zip"
+      ],
+      "backup_info": "Zenodo學術平台"
+    }
+  },
+  "unified_statistics": {
+    "total_files": 1,
+    "total_size_bytes": 28636017,
+    "available_datasets": 2,
+    "character_coverage": 0,
+    "estimated_training_samples": 0
+  }
+}

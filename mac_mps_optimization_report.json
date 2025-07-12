@@ -1,0 +1,104 @@
+{
+  "system_information": {
+    "system": "Darwin",
+    "platform": "macOS-15.2-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "architecture": "64bit",
+    "python_version": "3.13.3",
+    "cpu_count": 10,
+    "cpu_count_physical": 10,
+    "memory_gb": 16.0,
+    "disk_usage": 32.0,
+    "mac_model": "MacBook Air",
+    "chip": "Apple M4",
+    "total_cores": "10 (4 performance and 6 efficiency)",
+    "mps_available": 0
+  },
+  "mps_configuration": {
+    "enable_mps": 1,
+    "memory_fraction": 0.8,
+    "mixed_precision": 1,
+    "compile_model": 1
+  },
+  "optimizations_applied": [
+    "memory_optimization",
+    "data_loading_optimization",
+    "training_config_optimization"
+  ],
+  "performance_metrics": {
+    "forward_time": 28.06799292564392,
+    "backward_time": 0.01645183563232422,
+    "total_time": 28.084444761276245,
+    "samples_per_second": 2.2788415631504777,
+    "tokens_per_second": 1166.7668803330446,
+    "memory_efficiency": 0.030517578125,
+    "optimization_score": 22.788415631504776
+  },
+  "recommendations": [
+    "MPS不可用，考慮升級到支持MPS的Mac或使用CPU優化",
+    "多核CPU，可以考慮增加數據加載器的工作進程數",
+    "訓練速度較慢，考慮減少批次大小或啟用更多優化",
+    "內存效率較低，建議調整序列長度或批次大小"
+  ],
+  "next_steps": [
+    "實施實際模型訓練測試",
+    "監控訓練過程中的內存使用",
+    "調整批次大小以達到最佳性能",
+    "測試不同模型架構的性能表現"
+  ],
+  "system_benchmarks": {
+    "cpu_performance": {
+      "matrix_multiplication_time": 0.01860809326171875,
+      "fft_time": 0.4691901206970215,
+      "multithread_time": 0.18248486518859863,
+      "total_benchmark_time": 0.8015727996826172,
+      "matrix_gflops": 107.480114801148,
+      "overall_score": 124.75473224589832
+    },
+    "memory_performance": {
+      "sequential_write_time": 1.210888147354126,
+      "sequential_read_time": 0.03744697570800781,
+      "random_access_time": 0.04767203330993652,
+      "memory_copy_time": 0.030284881591796875,
+      "write_bandwidth_mb_s": 82.58401093322028,
+      "read_bandwidth_mb_s": 2670.4426221158255,
+      "copy_bandwidth_mb_s": 3301.9775790401814
+    },
+    "training_performance": {
+      "forward_time": 28.06799292564392,
+      "backward_time": 0.01645183563232422,
+      "total_time": 28.084444761276245,
+      "samples_per_second": 2.2788415631504777,
+      "tokens_per_second": 1166.7668803330446,
+      "memory_efficiency": 0.030517578125,
+      "optimization_score": 22.788415631504776
+    }
+  },
+  "training_configuration": {
+    "device": "cpu",
+    "batch_size": 64,
+    "gradient_accumulation_steps": 4,
+    "memory_optimization": 1,
+    "gradient_checkpointing": 1,
+    "mixed_precision": 1,
+    "num_workers": 4,
+    "pin_memory": 1,
+    "persistent_workers": 1,
+    "compile_model": 1,
+    "cache_dataset": 1,
+    "use_metal_performance_shaders": 1,
+    "optimize_for_apple_silicon": 1,
+    "energy_efficient_mode": 0
+  },
+  "memory_optimizations": {
+    "garbage_collection": "enabled",
+    "optimal_batch_size": 64,
+    "num_workers": 4
+  },
+  "data_loading_optimizations": {
+    "pin_memory": 1,
+    "num_workers": 4,
+    "persistent_workers": 1,
+    "prefetch_factor": 2
+  }
+}

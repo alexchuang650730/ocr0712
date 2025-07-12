@@ -1,0 +1,119 @@
+{
+  "deployment_info": {
+    "app_name": "OCR0712 HandwritingRecognizer",
+    "version": "v1.0",
+    "environment": "production",
+    "deployment_time": "2025-07-13T00:23:33.323539"
+  },
+  "system_status": {
+    "service_status": "healthy",
+    "model_loaded": 1,
+    "uptime": 1752337413.3235478,
+    "performance_stats": {
+      "total_requests": 4,
+      "successful_recognitions": 4,
+      "failed_recognitions": 0,
+      "average_processing_time": 0.14163172245025635,
+      "average_confidence": 0.8149034070396841
+    },
+    "optimization_status": {
+      "deepswe_available": 1,
+      "rl_tuner_available": 1,
+      "mps_available": 1
+    },
+    "configuration": {
+      "confidence_threshold": 0.8,
+      "max_batch_size": 16,
+      "supported_formats": [
+        "jpg",
+        "jpeg",
+        "png",
+        "pdf",
+        "tiff"
+      ]
+    }
+  },
+  "optimization_summary": {
+    "deepswe_optimizer": {
+      "enabled": 1,
+      "optimizations": 7
+    },
+    "rl_strategy_tuning": {
+      "enabled": 1,
+      "parameter_optimization": "bayesian"
+    },
+    "hardware_acceleration": {
+      "enabled": 1,
+      "target_platform": "Mac MPS"
+    }
+  },
+  "performance_benchmarks": {
+    "single_request": {
+      "average_time": 0.1460047721862793,
+      "min_time": 0.10256385803222656,
+      "max_time": 0.18760085105895996,
+      "requests_per_second": 6.849091197677813
+    },
+    "batch_processing": {
+      "batch_size": 5,
+      "total_time": 0.6999099254608154,
+      "time_per_image": 0.13998198509216309,
+      "batch_efficiency": 7.143776389094693
+    },
+    "optimization_impact": {
+      "deepswe_enabled": 1,
+      "performance_boost": "15-25%"
+    }
+  },
+  "deployment_checklist": [
+    {
+      "item": "模型文件加載",
+      "status": "✅",
+      "required": 1
+    },
+    {
+      "item": "DeepSWE優化器",
+      "status": "✅",
+      "required": 0
+    },
+    {
+      "item": "RL策略調優",
+      "status": "✅",
+      "required": 0
+    },
+    {
+      "item": "硬件加速",
+      "status": "✅",
+      "required": 0
+    },
+    {
+      "item": "性能監控",
+      "status": "✅",
+      "required": 1
+    },
+    {
+      "item": "錯誤處理",
+      "status": "✅",
+      "required": 1
+    },
+    {
+      "item": "批次處理",
+      "status": "✅",
+      "required": 0
+    }
+  ],
+  "monitoring_recommendations": [
+    "監控每秒請求數 (RPS)",
+    "追踪平均響應時間",
+    "監控識別準確率",
+    "檢查內存使用情況",
+    "監控錯誤率和異常"
+  ],
+  "scaling_recommendations": [
+    "水平擴展：增加服務實例數",
+    "垂直擴展：升級硬件配置",
+    "緩存優化：實施Redis緩存",
+    "負載均衡：使用Nginx或HAProxy",
+    "數據庫優化：使用專用存儲"
+  ]
+}
