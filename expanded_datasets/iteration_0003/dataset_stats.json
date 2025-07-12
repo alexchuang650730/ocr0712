@@ -1,0 +1,28 @@
+{
+  "total_samples": 2032,
+  "iteration": 3,
+  "timestamp": 1752328359.126902,
+  "diversity_metrics": {
+    "dimension_metrics": {
+      "handwriting_styles": 1.0,
+      "document_layouts": 0.621508741135167,
+      "content_domains": 0.2,
+      "noise_conditions": 0.5463829448310906,
+      "lighting_variations": 0.6127144665995827,
+      "paper_textures": 0.7962583772095857,
+      "writing_instruments": 0.6928262974183861,
+      "age_progressions": 0.8576845952772003,
+      "emotional_states": 0.5075437047267167
+    },
+    "overall_diversity": 0.6483243474664143,
+    "improvement_areas": [
+      "document_layouts",
+      "content_domains",
+      "noise_conditions",
+      "lighting_variations",
+      "writing_instruments",
+      "emotional_states"
+    ],
+    "sample_count": 2032
+  }
+}
